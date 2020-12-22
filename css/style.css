@@ -1,0 +1,272 @@
+@charset "utf-8";
+@import url("reset.css");
+
+/* Header > Navbar, Mobile */
+#header {
+    z-index: 3;
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+}
+
+#header.sticky-header {
+    position: fixed;
+    background-color: #f8f5f2;
+    border-bottom: 1px solid #ffffff;
+}
+
+#header>div {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Navbar */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    padding: 30px;
+}
+
+.logo h1 {
+    margin: 0 auto;
+    font-size: 45px;
+    font-weight: 600;
+    font-family: 'Satisfy', cursive;
+    color: #000b29;
+    letter-spacing: 2px;
+}
+
+.navbar__menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.navbar__menu__list {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Noto Sans', sans-serif;
+    padding: 5px 28px;
+    margin: 0 8px;
+    color: #000b29;
+    border: 1px solid transparent;
+    border-radius: 12px;
+}
+
+.navbar__menu__list:hover {
+    background-color: #000b29;
+    color: #f8f5f2;
+    border-color: #f8f5f2;
+}
+
+.navbar__toggle-Btn {
+    position: relative;
+    top: 0;
+    right: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: transparent;
+    display: none;
+}
+
+.navbar__toggle-Btn__line {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #000b29;
+    margin: 10px;
+}
+
+/* Main > About, Services */
+#main {
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    background: linear-gradient(165deg, #f8f5f2 35%, #000b29);
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f8f5f2+35,000b29+100 */
+    background: #f8f5f2; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjM1JSIgc3RvcC1jb2xvcj0iI2Y4ZjVmMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDBiMjkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(-45deg,  #f8f5f2 35%, #000b29 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  #f8f5f2 35%,#000b29 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  #f8f5f2 35%,#000b29 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f5f2', endColorstr='#000b29',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+}
+
+/* section 공통 */ 
+.section__container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.section__title h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    color: #000b29;
+    margin: auto;
+}
+
+.section__title h2::after {
+    content:"";
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 2px;
+    margin: 20px auto;
+    background-color: #edb83d;
+}
+
+/*Home*/
+
+.home__text {
+    margin: 250px 15px 0 15px;
+}
+
+.home__text p {
+    width: 50%;
+    color: #000b29;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    padding: 15px;
+    border-bottom: 3px solid #121f42;
+}
+
+.home__text p>span {
+    display: block;
+    font-size: 13px;
+    color: #d70026;
+    padding: 15px 0;
+}
+
+/* About Rora  */
+
+.rora__avatar {
+    margin: 0 auto;
+    width: 350px;
+    height: 350px;
+}
+
+.rora__avatar {
+    border-radius: 20px;
+}
+
+.rora__text {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 40px 0;
+    border-bottom: 3px solid #121f42;
+}
+
+/* Service Menu */
+
+.service__menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.service__menu__list {
+    margin: 10px 5px;
+    width: 230px;
+}
+
+.service__menu__list>div {
+    overflow: hidden;
+    /* border: 1px solid #fff; */
+    border-radius: 30px;
+}
+
+.service__menu__list img {
+    opacity: 0.9;
+    width: 100%;
+    height: 150px;
+}
+
+.service__menu__list__text {
+    color: #000b29;
+    text-align: center;
+    background-color: #f8f5f2;
+}
+
+.service__menu__list__text h3 {
+    margin: 0 auto;
+    padding: 5px 0;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.service__menu__list__text p {
+    width: 100%;
+    height: 100px;
+    font-size: 13px;
+    font-weight: 500;
+    padding-bottom: 15px;
+    margin: 0 auto;
+}
+
+
+
+/* Footer */
+#footer {
+    position: relative;
+    width: 100%;
+    background-color: #010204;
+}
+
+#footer>div {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+#contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.f__logo {
+    padding: 35px;
+    text-align: center;
+}
+.f__logo img {
+    width: 120px;
+    height: 100px;
+    border-radius: 20px;
+}
+
+address {
+    font-size: 14px;
+    color: #f8f5f2;
+    text-align: center; 
+}
+
+address a {
+    color: #f8f5f2;
+    display: block;
+}
+
+.sns img {
+    width: 25px;
+    height: 25px;
+    background-color: #f8f5f2;
+}
+
+.kakao__icon {
+    display: inline-block;
+}
+
+.kakao p {
+    color: #edb83d;
+    display: inline-block;
+}
