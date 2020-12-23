@@ -167,6 +167,41 @@
     border-bottom: 3px solid #121f42;
 }
 
+.rora__small__contact {
+    color: #121f42;
+    font-size: 13px;
+    display: block;
+}
+
+.rora__small__contact strong {
+    font-size: 11px;
+}
+
+.rora__small__contact a {
+    color: #121f42;
+    display: inline-block;
+}
+
+.about__sns {
+    margin-top: 15px;
+}
+.about__sns img {
+    width: 17px;
+    height: 17px;
+}
+
+.about__insta__icon {
+    background-color: #edb83d;
+    border-radius: 5px;
+}
+
+.about__kakao p {
+    display: inline-block;
+    color: #121f42;
+    font-size: 11px;
+    margin: 3px 0;
+}
+
 /* Service Menu */
 
 .service__menu {
@@ -257,8 +292,8 @@ address a {
 }
 
 .sns img {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     background-color: #f8f5f2;
 }
 

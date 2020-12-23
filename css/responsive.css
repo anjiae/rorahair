@@ -2,19 +2,22 @@
 
 @media all and (max-width:1024px) {
 
-  /* HEADER */
-  .navbar__menu {
-    display: none;
-  }
-  .navbar__toggle-Btn {
-    display: block;
-  }
-
-  /* Main */
 
 }
 
 @media all and (max-width: 768px) {
+  #navbar {
+    display: block;
+    width: 100%;
+  }
+  .logo {
+    text-align: center;
+  }
+
+  .navbar__menu {
+    display: none;
+  }
+
   #contact {
     flex-direction: column;
 }
