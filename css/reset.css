@@ -30,6 +30,22 @@ a {
   text-decoration: none;
 }
 
+/* a:link {
+  color: #edb83d; text-decoration: none;
+}
+a:visited {
+  color: #edb83d; text-decoration: none;
+}
+a:hover {
+  color: #edb83d; text-decoration: none;
+}
+a:active {
+  color: #edb83d; text-decoration: none;
+}
+a:focus {
+  color: #edb83d; text-decoration: none;
+} */
+
 ul {
   list-style: none;
 }

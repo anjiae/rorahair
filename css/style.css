@@ -181,7 +181,14 @@
 .rora__small__contact a {
     color: #121f42;
     display: inline-block;
+    text-decoration: none;
 }
+
+.rora__small__contact a:hover {
+    color: #edb83d;
+    
+}
+
 
 .about__sns {
     margin-top: 15px;
@@ -264,12 +271,6 @@
     margin: 0 auto;
 }
 
-/* #contact {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-} */
-
 .f__logo {
     margin-top: 25px;
     text-align: center;
@@ -289,6 +290,10 @@ address {
 
 address a {
     color: #f8f5f2;
+    display: block;
+}
+address a:hover {
+    color: #edb83d;
     display: block;
 }
 
