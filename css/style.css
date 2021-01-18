@@ -100,6 +100,10 @@
 
 /* section 공통 */ 
 
+.section {
+    padding-top: 70px;
+}
+
 .section__container {
     max-width: 1400px;
     margin: 0 auto;
@@ -125,6 +129,10 @@
 }
 
 /*Home*/
+
+#home {
+    padding: 0;
+}
 
 .home__text {
     margin: 250px 15px 0 15px;
@@ -222,6 +230,11 @@
     margin: 5px 0;
     width: 230px;
 }
+
+/* up-scroll event */
+.up-service {
+    transition: transform 0.6s, opacity 1s;
+}  
 
 .service__menu__list>div {
     overflow: hidden;
@@ -329,4 +342,28 @@ address a:hover {
 .copy p:first-child {
     color: #fbdfc4;
     margin-bottom: 60px;
+}
+
+/* Arrow up Scroll */
+.arrow-up {
+    z-index: 10;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 70px;
+    height: 70px;
+    font-size: 45px;
+    line-height: 45px;
+    background-color: #f8f5f2;
+    color: #edb83d;
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 300ms ease-in;
+    cursor: pointer;
+}
+
+.arrow-up.visible {
+    opacity: 1;
+    pointer-events: auto;
 }
